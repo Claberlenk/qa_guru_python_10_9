@@ -5,7 +5,6 @@ from selene.support.shared import browser
 from selene.support.shared.jquery_style import s, ss
 
 
-
 def test_label_allure_step_should_issue_title_text():
     open_github()
     search_allure_repo('eroshenkoam/allure-example')
@@ -19,6 +18,7 @@ def test_label_allure_step_should_issue_title_text():
     allure.dynamic.feature("New task")
     allure.dynamic.story("Test git")
     allure.dynamic.link("https://github.com", name="Testing")
+
 
 @allure.step('Open github')
 def open_github():

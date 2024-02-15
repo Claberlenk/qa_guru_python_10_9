@@ -11,7 +11,6 @@ from selene.support.shared.jquery_style import s, ss
 @allure.feature("Issues title")
 @allure.story("Check issue title")
 @allure.link("https://github.com", name="Testing")
-
 def test_label_allure_step_should_issue_title_text():
     open_github()
     search_allure_repo('eroshenkoam/allure-example')
